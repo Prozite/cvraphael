@@ -15,12 +15,12 @@ body{
 }
 #maphoto img{
   border-radius: 280px;
-
-  }
+  height: 200px;
+}
   #textintro{
     text-align: center;
     background-color: white;
-  box-shadow: 20px 20px 20px black;
+  box-shadow: 10px 10px 10px green
   }
   #textintro h1 {
     font-family: "28 Days Later";
