@@ -1,3 +1,6 @@
+body{
+background-image: url(images/matrix.jpg)
+}
 @font-face {
 font-family: '28 Days Later';
 src: url('28 Days Later.eot?') format('eot'),
@@ -7,33 +10,31 @@ src: url('28 Days Later.eot?') format('eot'),
 font-weight: normal;
 font-style: normal;
 }
-body{
-  background-image: url(images/matrix.jpg)
-}
+
 #maphoto{
-  text-align: center;
+text-align: center;
 }
 #maphoto img{
-  border-radius: 280px;
-  height: 200px;
+border-radius: 280px;
+height: 200px;
 }
   #textintro{
-    text-align: center;
-    background-color: white;
+  text-align: center;
+  background-color: white;
   box-shadow: 10px 10px 10px green
   }
   #textintro h1 {
-    font-family: "28 Days Later";
-    font-size: 45px;
-    color: black;
+  font-family: "28 Days Later";
+  font-size: 45px;
+  color: black;
   }
   #textintro p{
-    font-family: "28 Days Later";
-    font-size:40px;
-    color:green
+  font-family: "28 Days Later";
+  font-size:40px;
+  color:green
   }
   #general{
-    width: 100%;
+  width: 100%;
   display: block;
   border-radius: 20px;
   }
@@ -48,16 +49,22 @@ border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 }
 #colone1 h2{
-  font-size: 25px;
-  text-align: center;
-  text-decoration:underline;
-  font-family: "28 days later";
+font-size: 25px;
+text-align: center;
+text-decoration:underline;
+font-family: "28 days later";
 }
 #colone1 li{
 font-size: 20px;
 line-height: 50px;
 color: white;
 font-family: "28 days later";
+list-style: none;
+text-align: center;
+}
+#colone1:hover li{
+  color: yellow;
+
 }
 #colone2{
 width: 33%;
@@ -74,10 +81,14 @@ text-decoration: underline;
 text-align: center;
 }
 #colone2 li{
-  font-size:20px;
-  line-height: 50px;
-  color: white;
-  font-family: "28 days later";
+font-size:20px;
+line-height: 50px;
+color: white;
+font-family: "28 days later";
+list-style: none;
+}
+#colone2:hover li{
+  color: yellow;
 }
 #colone3{
 width: 33%;
@@ -87,30 +98,52 @@ float: right;
 display: inline-block;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
+text-align: center;
 }
 #colone3 h2{
-  font-family: '28 days later';
-  font-size: 25px;
-  text-decoration: underline;
-  text-align: center;
-  }
+font-family: '28 days later';
+font-size: 25px;
+text-decoration: underline;
+text-align: center;
+}
   #colone3 li{
-    font-size:20px;
-    line-height: 50px;
-    color: white;
-    font-family: "28 days later";
-  }
+font-size:20px;
+line-height: 50px;
+color: white;
+font-family: "28 days later";
+list-style: none;
+}
+#colone3:hover li{
+  color: yellow;
+  text-shadow: 30px;
+}
   #contact{
-    background-color: #0D4A05;
-    border-radius: 20px;
-    font-family: "28 days later";
+background-color: #0D4A05;
+border-radius: 20px;
+font-family: "28 days later";
+width: 100%;
+height: 70px;
+float: left;
+display: inline-block;
+margin-top: 20px;
+line-height: 30px;
 }
 #contact h1{
-  text-decoration: underline;
-  font-size: 20px;
-  padding-left: 20px;
+text-decoration: underline;
+font-size: 20px;
+padding-left: 20px;
+display: inline;
+
 }
 #contact p{
-  padding-left: 30px;
-  color: white;
+padding-left: 30px;
+color: white;
+display: inline;
+}
+#contact:hover p{
+  color:yellow;
+}
+#contact  img{
+  height: 25px;
+  display: inline;
 }
