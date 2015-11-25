@@ -13,32 +13,53 @@
 </div>
 <div id="textintro">
 <h1>Raphael Giacco</h1>
-<p>Devellopeur web/mobile</p>
+<p>Developpeur web/mobile</p>
 </div>
 </header>
-<div id="general">
+<div id="general" onmouseover="move()">
 <div id="colone1">
   <h2>Parcours</h2>
   <ul>
     <li>CAP patissier</li>
     <li>CAP serveur en salle</li>
     <li>ESG Clinique de villeneuve d'ascq</li>
+</ul>
+<script>
+function move(){
+  document.getElementById('colone21').style.width=10%;
+  }
+  </script>
 </div>
-  <div id="colone2">
+  <div id="colone2" onmouseover="move">
     <h2>Competence informatique</h2>
     <ul>
       <li>Git</li>
+      <progress value="80" min="0" max="100">80%</progress>
       <li>html/css</li>
+      <progress value="60" min="0" max="100">60%</progress>
       <li>java script</li>
+      <progress value="35" min="0" max="100">35%</progress>
     </ul>
+    <script>
+    function move(){
+      document.getElementById('colone2').style.width= 10;
+    }
+    </script>
   </div>
-    <div id="colone3">
-      <h2>centre d'interet</h2>
+    <div id="colone3" onmouseover="move3">
+
+      <h2>centre d'interets</h2>
       <ul>
         <li>Sport</li>
         <li>Cinema</li>
         <li>Informatique</li>
         <li>Voyages</li>
+      </ul>
+      <script>
+      function move3(){
+        document.getElementById('colone3').style=witdh:10%;
+      }
+      </script>
     </div>
   </div>
   <div id="contact">
@@ -51,9 +72,6 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 </script>
 </p>
-
-
 </div>
-
 </body>
 </html>

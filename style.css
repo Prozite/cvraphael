@@ -38,15 +38,16 @@ height: 200px;
   display: block;
   border-radius: 20px;
   }
-
 #colone1{
+position: relative;
 width: 33%;
 height: 300px;
 background-color: #083017;
-display: inline-block;
-float: left;
+display:inline-block;
 border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
+-webkit-transition: width 2s ease-in, height 4s ease-out;
+float: left;
 }
 #colone1 h2{
 font-size: 25px;
@@ -62,17 +63,23 @@ font-family: "28 days later";
 list-style: none;
 text-align: center;
 }
-#colone1:hover li{
+#colone1:hover{
+  width: 65%;
+  height: 300px;
   color: yellow;
-
+}
+#colone1:hover li {
+  color: yellow;
 }
 #colone2{
+  position: relative;
 width: 33%;
 height: 300px;
 background-color: #083003;
 display: inline-block;
 text-align: center;
 padding-left: 13px;
+-webkit-transition: width 2s ease-in , height 4s ease-in ;
 }
 #colone2 h2{
 font-family: '28 days later';
@@ -87,10 +94,26 @@ color: white;
 font-family: "28 days later";
 list-style: none;
 }
-#colone2:hover li{
+  #colone2 progress {
+  visibility: hidden;
+}
+#colone2:hover {
+visibility: visible;
+width: 65%;
+height: 300px;
+background-color: #083003;
+}
+#colone2:hover progress{
+  visibility: visible;
+}
+#colone2:hover {
+  color: yellow;
+}
+#colone2:hover li {
   color: yellow;
 }
 #colone3{
+position: absolute;
 width: 33%;
 height: 300px;
 background-color: #041902;
@@ -98,8 +121,9 @@ float: right;
 display: inline-block;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
-text-align: center;
+-webkit-transition: width 2s ease-in , height 4s ease-in ;
 }
+
 #colone3 h2{
 font-family: '28 days later';
 font-size: 25px;
@@ -112,10 +136,15 @@ line-height: 50px;
 color: white;
 font-family: "28 days later";
 list-style: none;
+text-align: center;
+}
+#colone3:hover {
+  width: 55%;
+  height: 300px;
+  color: yellow;
 }
 #colone3:hover li{
   color: yellow;
-  text-shadow: 30px;
 }
   #contact{
 background-color: #0D4A05;
