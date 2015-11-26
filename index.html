@@ -9,57 +9,53 @@
 <body>
   <header>
     <div id="maphoto">
-  <img src="images/raph.jpg">
+  <img src="images/photoraph.png">
 </div>
 <div id="textintro">
 <h1>Raphael Giacco</h1>
 <p>Developpeur web/mobile</p>
 </div>
 </header>
-<div id="general" onmouseover="move()">
-<div id="colone1">
+<div id="general">
+<div id="colone1" onmouseover="reduce('colone2');reduce('colone3');increase('colone1');">
   <h2>Parcours</h2>
   <ul>
     <li>CAP patissier</li>
+    <p>2008-2010</p>
     <li>CAP serveur en salle</li>
+    <p>2011-2013</p>
     <li>ESG Clinique de villeneuve d'ascq</li>
+    <p>2013-2014</p>
 </ul>
-<script>
-function move(){
-  document.getElementById('colone21').style.width=10%;
-  }
-  </script>
 </div>
-  <div id="colone2" onmouseover="move">
+  <div id="colone2" onmouseover="reduce('colone1');reduce('colone3');increase('colone2');">
     <h2>Competence informatique</h2>
     <ul>
       <li>Git</li>
       <progress value="80" min="0" max="100">80%</progress>
       <li>html/css</li>
-      <progress value="60" min="0" max="100">60%</progress>
+      <progress value="70" min="0" max="100">60%</progress>
       <li>java script</li>
-      <progress value="35" min="0" max="100">35%</progress>
+      <progress value="15" min="0" max="100">35%</progress>
     </ul>
     <script>
-    function move(){
-      document.getElementById('colone2').style.width= 10;
+    function reduce(id){
+    document.getElementById(id).style.width="15%";
+    }
+    function increase(id){
+    document.getElementById(id).style.width="65%";
     }
     </script>
   </div>
-    <div id="colone3" onmouseover="move3">
-
-      <h2>centre d'interets</h2>
+    <div id="colone3" onmouseover="reduce('colone1');reduce('colone2');increase('colone3');">
+      <h2>centres d'interet</h2>
       <ul>
         <li>Sport</li>
         <li>Cinema</li>
         <li>Informatique</li>
         <li>Voyages</li>
       </ul>
-      <script>
-      function move3(){
-        document.getElementById('colone3').style=witdh:10%;
-      }
-      </script>
+
     </div>
   </div>
   <div id="contact">
@@ -72,6 +68,7 @@ function move(){
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 </script>
 </p>
+<p><img src="images/popschool.png"></p>
 </div>
 </body>
 </html>

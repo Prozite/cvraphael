@@ -1,5 +1,5 @@
 body{
-background-image: url(images/matrix.jpg)
+background-image: url(images/fond2.jpg)
 }
 @font-face {
 font-family: '28 Days Later';
@@ -15,13 +15,13 @@ font-style: normal;
 text-align: center;
 }
 #maphoto img{
-border-radius: 280px;
-height: 200px;
+border-radius: 350px;
+height: 300px;
 }
   #textintro{
   text-align: center;
   background-color: white;
-  box-shadow: 10px 10px 10px green
+  box-shadow: 10px 10px 10px green;
   }
   #textintro h1 {
   font-family: "28 Days Later";
@@ -35,12 +35,14 @@ height: 200px;
   }
   #general{
   width: 100%;
-  display: block;
   border-radius: 20px;
   }
+#colone1 ,#colone2, #colone3{
+  overflow: hidden;
+}
 #colone1{
 position: relative;
-width: 33%;
+width: 31%;
 height: 300px;
 background-color: #083017;
 display:inline-block;
@@ -48,6 +50,7 @@ border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 -webkit-transition: width 2s ease-in, height 4s ease-out;
 float: left;
+margin-left: 2.5%;
 }
 #colone1 h2{
 font-size: 25px;
@@ -57,11 +60,14 @@ font-family: "28 days later";
 }
 #colone1 li{
 font-size: 20px;
-line-height: 50px;
+line-height: 20px;
 color: white;
 font-family: "28 days later";
 list-style: none;
 text-align: center;
+}
+#colone1 p {
+  visibility: hidden;
 }
 #colone1:hover{
   width: 65%;
@@ -71,9 +77,16 @@ text-align: center;
 #colone1:hover li {
   color: yellow;
 }
+#colone1:hover p{
+  visibility: visible;
+  font-size: 20px;
+  font-family:"28 days later";
+  color: red;
+  text-align: center;
+}
 #colone2{
   position: relative;
-width: 33%;
+width: 31%;
 height: 300px;
 background-color: #083003;
 display: inline-block;
@@ -96,6 +109,7 @@ list-style: none;
 }
   #colone2 progress {
   visibility: hidden;
+  color:yellow
 }
 #colone2:hover {
 visibility: visible;
@@ -105,6 +119,15 @@ background-color: #083003;
 }
 #colone2:hover progress{
   visibility: visible;
+  width: 250px;
+  content: '|||||||||||||';
+    display: inline-block;
+    overflow: hidden;
+    height: 15px;
+    border-radius: 12px;
+    transform: skewX(-30deg);
+    color: #000000;
+
 }
 #colone2:hover {
   color: yellow;
@@ -114,7 +137,7 @@ background-color: #083003;
 }
 #colone3{
 position: absolute;
-width: 33%;
+width: 31%;
 height: 300px;
 background-color: #041902;
 float: right;
@@ -122,6 +145,7 @@ display: inline-block;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 -webkit-transition: width 2s ease-in , height 4s ease-in ;
+margin-right: 2.5%;
 }
 
 #colone3 h2{
