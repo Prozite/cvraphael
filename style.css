@@ -188,6 +188,13 @@ padding-left: 20px;
 display: inline;
 
 }
+#contact a{
+  text-decoration: none;
+  color: white;
+}
+#contact:hover a{
+  color: yellow;
+}
 #contact p{
 padding-left: 30px;
 color: white;
@@ -197,6 +204,6 @@ display: inline;
   color:yellow;
 }
 #contact  img{
-  height: 25px;
+  height: 30px;
   display: inline;
 }
